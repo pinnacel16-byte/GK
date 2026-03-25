@@ -144,7 +144,7 @@ ul { list-style: none; }
   gap: 0.75rem;
   text-decoration: none;
 }
-.logo-icon { height: 52px; width: auto; border-radius: 0; mix-blend-mode: multiply; }
+.logo-icon { height: 52px; width: auto; mix-blend-mode: screen; }
 .logo-text {
   display: flex;
   flex-direction: column;
@@ -253,7 +253,7 @@ ul { list-style: none; }
   animation: floatIcon 4s ease-in-out infinite;
   filter: drop-shadow(0 8px 40px rgba(201,168,76,0.5));
 }
-.hero-icon img { mix-blend-mode: multiply; }
+.hero-icon img { mix-blend-mode: screen; }
 @keyframes floatIcon {
   0%, 100% { transform: translateY(0); }
   50%       { transform: translateY(-10px); }
@@ -843,8 +843,7 @@ ul { list-style: none; }
 }
 .swan-icon {
   width: 180px;
-  border-radius: 0;
-  mix-blend-mode: multiply;
+  mix-blend-mode: screen;
   filter: drop-shadow(0 6px 20px rgba(201,168,76,0.4));
 }
 .builders-brand {
