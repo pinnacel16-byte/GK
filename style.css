@@ -251,9 +251,9 @@ ul { list-style: none; }
   width: 320px;
   margin: 0 auto 2rem;
   animation: floatIcon 4s ease-in-out infinite;
+  mix-blend-mode: screen;
 }
 .hero-icon img {
-  mix-blend-mode: screen;
   width: 100%;
   height: auto;
 }
