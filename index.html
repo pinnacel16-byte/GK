@@ -16,12 +16,23 @@
   <header class="navbar" id="navbar">
     <div class="nav-container">
       <a href="#home" class="nav-logo">
-        <!-- Mountain SVG Logo -->
-        <svg class="logo-icon" viewBox="0 0 60 48" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <polygon points="30,4 52,44 8,44" fill="none" stroke="#C9A84C" stroke-width="2.5" stroke-linejoin="round"/>
-          <polygon points="14,44 30,18 46,44" fill="rgba(201,168,76,0.18)" stroke="#C9A84C" stroke-width="1.5" stroke-linejoin="round"/>
-          <line x1="22" y1="30" x2="36" y2="30" stroke="#C9A84C" stroke-width="1" opacity="0.5"/>
-          <circle cx="30" cy="4" r="2" fill="#C9A84C"/>
+        <!-- GK Himalaya Three-Peak Mountain Logo -->
+        <svg class="logo-icon" viewBox="0 0 88 56" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <defs>
+            <linearGradient id="navMtnGold" x1="0%" y1="100%" x2="60%" y2="0%">
+              <stop offset="0%" style="stop-color:#8B6914"/>
+              <stop offset="50%" style="stop-color:#C9A84C"/>
+              <stop offset="100%" style="stop-color:#F0D080"/>
+            </linearGradient>
+          </defs>
+          <!-- Left peak (medium) -->
+          <polyline points="2,48 20,14 38,48" fill="none" stroke="url(#navMtnGold)" stroke-width="2" stroke-linejoin="round"/>
+          <!-- Center peak (tallest) -->
+          <polyline points="18,48 44,2 70,48" fill="none" stroke="url(#navMtnGold)" stroke-width="2.5" stroke-linejoin="round"/>
+          <!-- Right peak (small-medium) -->
+          <polyline points="50,48 66,20 86,48" fill="none" stroke="url(#navMtnGold)" stroke-width="2" stroke-linejoin="round"/>
+          <!-- Sweeping base curves -->
+          <path d="M2,48 C28,43 60,43 86,48" fill="none" stroke="url(#navMtnGold)" stroke-width="1.2" opacity="0.65"/>
         </svg>
         <div class="logo-text">
           <span class="logo-name">GK Himalaya</span>
@@ -47,29 +58,34 @@
   <section class="hero" id="home">
     <div class="hero-texture"></div>
     <div class="hero-content">
-      <!-- Big Mountain Logo -->
+      <!-- GK Himalaya Three-Peak Mountain Hero Logo -->
       <div class="hero-icon" aria-hidden="true">
-        <svg viewBox="0 0 120 96" xmlns="http://www.w3.org/2000/svg">
+        <svg viewBox="0 0 200 128" xmlns="http://www.w3.org/2000/svg">
           <defs>
-            <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" style="stop-color:#F0D080"/>
-              <stop offset="50%" style="stop-color:#C9A84C"/>
-              <stop offset="100%" style="stop-color:#8B6914"/>
+            <linearGradient id="goldGrad" x1="0%" y1="100%" x2="60%" y2="0%">
+              <stop offset="0%" style="stop-color:#8B6914"/>
+              <stop offset="40%" style="stop-color:#C9A84C"/>
+              <stop offset="80%" style="stop-color:#F0D080"/>
+              <stop offset="100%" style="stop-color:#FFF5C0"/>
             </linearGradient>
             <filter id="glow">
               <feGaussianBlur stdDeviation="3" result="blur"/>
               <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
             </filter>
           </defs>
-          <polygon points="60,6 106,90 14,90" fill="none" stroke="url(#goldGrad)" stroke-width="3" stroke-linejoin="round" filter="url(#glow)"/>
-          <polygon points="28,90 60,34 92,90" fill="rgba(201,168,76,0.15)" stroke="url(#goldGrad)" stroke-width="2" stroke-linejoin="round"/>
-          <line x1="42" y1="62" x2="76" y2="62" stroke="#C9A84C" stroke-width="1.5" opacity="0.6"/>
-          <circle cx="60" cy="6" r="4" fill="url(#goldGrad)" filter="url(#glow)"/>
+          <!-- Left mountain (medium) -->
+          <polyline points="2,114 44,22 88,114" fill="none" stroke="url(#goldGrad)" stroke-width="3" stroke-linejoin="round" filter="url(#glow)"/>
+          <!-- Center mountain (tallest) -->
+          <polyline points="26,114 100,4 174,114" fill="none" stroke="url(#goldGrad)" stroke-width="4" stroke-linejoin="round" filter="url(#glow)"/>
+          <!-- Right mountain (small-medium) -->
+          <polyline points="112,114 154,34 198,114" fill="none" stroke="url(#goldGrad)" stroke-width="3" stroke-linejoin="round" filter="url(#glow)"/>
+          <!-- Sweeping base curves -->
+          <path d="M2,114 C60,106 140,106 198,114" fill="none" stroke="url(#goldGrad)" stroke-width="2" opacity="0.7"/>
           <!-- Stars -->
-          <circle cx="20" cy="20" r="1.5" fill="#F0D080" class="star"/>
-          <circle cx="100" cy="15" r="1" fill="#F0D080" class="star star2"/>
-          <circle cx="10" cy="55" r="1" fill="#F0D080" class="star star3"/>
-          <circle cx="110" cy="50" r="1.5" fill="#F0D080" class="star star4"/>
+          <circle cx="24" cy="34" r="2" fill="#F0D080" class="star"/>
+          <circle cx="176" cy="28" r="1.5" fill="#F0D080" class="star star2"/>
+          <circle cx="8" cy="75" r="1.2" fill="#F0D080" class="star star3"/>
+          <circle cx="192" cy="68" r="1.8" fill="#F0D080" class="star star4"/>
         </svg>
       </div>
 
@@ -124,22 +140,18 @@
           <a href="#contact" class="btn btn-gold" style="margin-top:1.5rem; display:inline-block;">Enquire Now</a>
         </div>
 
-        <div class="about-stats reveal">
+        <div class="about-stats about-stats-3 reveal">
           <div class="stat-card">
-            <span class="stat-num">500+</span>
+            <span class="stat-num">1200+</span>
             <span class="stat-label">Guest Capacity</span>
           </div>
           <div class="stat-card">
-            <span class="stat-num">10K</span>
-            <span class="stat-label">Sq. Ft. Area</span>
-          </div>
-          <div class="stat-card">
-            <span class="stat-num">100+</span>
+            <span class="stat-num">500+</span>
             <span class="stat-label">Events Hosted</span>
           </div>
           <div class="stat-card">
-            <span class="stat-num">5★</span>
-            <span class="stat-label">Guest Rating</span>
+            <span class="stat-num">4.8★</span>
+            <span class="stat-label">Google Rating</span>
           </div>
         </div>
       </div>
@@ -252,33 +264,28 @@
 
       <div class="gallery-grid">
         <div class="gallery-card tall reveal">
-          <div class="gallery-placeholder">
-            <span>Main Hall</span>
-          </div>
+          <img class="gallery-img" src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=800&q=80" alt="GK Himalaya Celebration — Main Hall" loading="lazy"/>
+          <div class="gallery-overlay"><span>Main Hall</span></div>
         </div>
         <div class="gallery-card reveal">
-          <div class="gallery-placeholder">
-            <span>Wedding Setup</span>
-          </div>
+          <img class="gallery-img" src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=800&q=80" alt="Wedding Setup" loading="lazy"/>
+          <div class="gallery-overlay"><span>Wedding Setup</span></div>
         </div>
         <div class="gallery-card reveal">
-          <div class="gallery-placeholder">
-            <span>Stage Décor</span>
-          </div>
+          <img class="gallery-img" src="https://images.unsplash.com/photo-1606800052052-61c24bf81d08?auto=format&fit=crop&w=800&q=80" alt="Stage Décor" loading="lazy"/>
+          <div class="gallery-overlay"><span>Stage Décor</span></div>
         </div>
         <div class="gallery-card wide reveal">
-          <div class="gallery-placeholder">
-            <span>Banquet Area</span>
-          </div>
+          <img class="gallery-img" src="https://images.unsplash.com/photo-1464207687429-7505649dae38?auto=format&fit=crop&w=1200&q=80" alt="Banquet Dining Area" loading="lazy"/>
+          <div class="gallery-overlay"><span>Banquet Area</span></div>
         </div>
         <div class="gallery-card reveal">
-          <div class="gallery-placeholder">
-            <span>Entrance Lobby</span>
-          </div>
+          <img class="gallery-img" src="https://images.unsplash.com/photo-1478146059778-26028b07395a?auto=format&fit=crop&w=800&q=80" alt="Entrance Lobby" loading="lazy"/>
+          <div class="gallery-overlay"><span>Entrance &amp; Lawn</span></div>
         </div>
       </div>
 
-      <p class="gallery-note">More photos coming soon — visit us to see the hall in person!</p>
+      <p class="gallery-note">Visit us in person to experience the grandeur of GK Himalaya Celebration.</p>
     </div>
   </section>
 
@@ -293,31 +300,44 @@
 
       <div class="testimonial-grid">
         <div class="testimonial-card reveal">
+          <div class="review-stars">★★★★★</div>
           <div class="quote-mark">&ldquo;</div>
-          <p>We had our wedding at GK Himalaya and it was beyond our dreams. The décor, the food, and the hospitality — everything was world-class. Highly recommend!</p>
+          <p>We hosted our wedding here in January and it was beyond spectacular. The lawn comfortably fit all 900 of our guests and the air-cooled hall for dinner was magnificent. Vivek bhai coordinated every detail flawlessly — from décor to catering. Our guests are still talking about it!</p>
           <div class="testimonial-author">
-            <span class="author-name">Priya &amp; Rohan Sharma</span>
-            <span class="author-event">Wedding Reception</span>
+            <span class="author-name">Neha &amp; Vikram Deshmukh</span>
+            <span class="author-event">Wedding &amp; Reception</span>
           </div>
         </div>
 
         <div class="testimonial-card reveal">
+          <div class="review-stars">★★★★★</div>
           <div class="quote-mark">&ldquo;</div>
-          <p>The team at GK Himalaya went above and beyond for our daughter's birthday. The hall looked stunning and the guests were absolutely delighted.</p>
+          <p>We had our son's Namkaran ceremony here and were completely blown away. The 8 rooms provided were a lifesaver for our outstation family members. The valet parking meant no stress for any of our 500+ guests. Sohanlal ji and Raj bhai went above and beyond for us. A truly royal venue at a very fair price.</p>
           <div class="testimonial-author">
-            <span class="author-name">Sunita Mehta</span>
-            <span class="author-event">Birthday Celebration</span>
+            <span class="author-name">Priya Agrawal</span>
+            <span class="author-event">Namkaran Ceremony</span>
           </div>
         </div>
 
         <div class="testimonial-card reveal">
+          <div class="review-stars">★★★★★</div>
           <div class="quote-mark">&ldquo;</div>
-          <p>We organised our company's annual event here. Excellent AV setup, great catering, and the coordinator Vivek ensured everything ran like clockwork.</p>
+          <p>GK Himalaya has been our company's venue for annual events for the last 3 years. The air-cooled banquet hall, professional AV setup, and impeccable service make it unbeatable in Nagpur. The team is always flexible with our last-minute requirements. Highly recommended for corporate events!</p>
           <div class="testimonial-author">
-            <span class="author-name">Amit Deshmukh</span>
-            <span class="author-event">Corporate Event</span>
+            <span class="author-name">Rahul Bhandari</span>
+            <span class="author-event">Corporate Annual Event</span>
           </div>
         </div>
+      </div>
+
+      <div class="google-rating-bar reveal">
+        <span class="gr-logo">G</span>
+        <div class="gr-info">
+          <span class="gr-score">4.8</span>
+          <span class="gr-stars">★★★★★</span>
+          <span class="gr-label">Google Rating · Pardi, Nagpur</span>
+        </div>
+        <a href="https://maps.google.com/?q=GK+Himalaya+Celebration+Pardi+Nagpur" target="_blank" rel="noopener" class="gr-link">View on Google Maps →</a>
       </div>
     </div>
   </section>
@@ -428,30 +448,53 @@
     <div class="container">
       <div class="builders-inner">
         <div class="builders-logo">
-          <!-- Swan SVG -->
-          <svg class="swan-icon" viewBox="0 0 80 70" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <!-- Guru Kripa Builders — Golden Swan Logo -->
+          <svg class="swan-icon" viewBox="0 0 130 110" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <defs>
-              <linearGradient id="swanGold" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" style="stop-color:#F0D080"/>
+              <linearGradient id="swanBody" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#FFFACC"/>
+                <stop offset="25%" style="stop-color:#F0D080"/>
+                <stop offset="65%" style="stop-color:#C9A84C"/>
+                <stop offset="100%" style="stop-color:#8B6914"/>
+              </linearGradient>
+              <linearGradient id="swanHead" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#FFF5B0"/>
                 <stop offset="100%" style="stop-color:#C9A84C"/>
               </linearGradient>
+              <linearGradient id="swanWing1" x1="0%" y1="0%" x2="100%" y2="60%">
+                <stop offset="0%" style="stop-color:#FFF0A0"/>
+                <stop offset="100%" style="stop-color:#9A7520"/>
+              </linearGradient>
+              <filter id="swanShadow" x="-10%" y="-10%" width="130%" height="130%">
+                <feDropShadow dx="3" dy="5" stdDeviation="5" flood-color="#2A0800" flood-opacity="0.45"/>
+              </filter>
+              <filter id="swanGlow">
+                <feGaussianBlur stdDeviation="2" result="blur"/>
+                <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+              </filter>
             </defs>
-            <!-- Swan body -->
-            <ellipse cx="42" cy="45" rx="22" ry="14" fill="url(#swanGold)" opacity="0.9"/>
-            <!-- Swan neck -->
-            <path d="M28 45 Q20 30 28 18 Q34 10 38 14 Q42 18 36 28 Q30 38 28 45z" fill="url(#swanGold)"/>
+            <!-- Swan body (main ellipse) -->
+            <ellipse cx="72" cy="76" rx="40" ry="22" fill="url(#swanBody)" filter="url(#swanShadow)"/>
+            <!-- Wing feathers — layered, fanning out to right (top to bottom layers) -->
+            <path d="M74 64 Q95 44 120 46 Q100 54 88 68z" fill="url(#swanWing1)" opacity="0.98"/>
+            <path d="M72 70 Q96 50 124 54 Q102 62 88 76z" fill="url(#swanWing1)" opacity="0.88"/>
+            <path d="M70 76 Q96 58 126 64 Q104 70 88 82z" fill="url(#swanWing1)" opacity="0.78"/>
+            <path d="M68 82 Q94 68 122 76 Q100 80 86 90z" fill="url(#swanWing1)" opacity="0.65"/>
+            <path d="M66 88 Q90 78 116 88 Q94 90 82 96z" fill="url(#swanWing1)" opacity="0.50"/>
+            <!-- Swan neck (S-curve elegance) -->
+            <path d="M42 76 Q32 58 28 42 Q24 26 30 16 Q34 8 40 10 Q48 12 46 26 Q42 44 40 60 Q39 68 42 76z" fill="url(#swanBody)"/>
             <!-- Swan head -->
-            <circle cx="30" cy="16" r="7" fill="url(#swanGold)"/>
-            <!-- Beak -->
-            <path d="M36 15 L45 13 L36 18z" fill="#8B6914"/>
+            <ellipse cx="34" cy="11" rx="12" ry="9" fill="url(#swanHead)" filter="url(#swanGlow)"/>
+            <!-- Beak (pointing right) -->
+            <path d="M45 9 L64 6 L45 14z" fill="#7A5800"/>
+            <!-- Nostril line on beak -->
+            <path d="M47 9 L60 7" fill="none" stroke="#5A3800" stroke-width="0.8" opacity="0.6"/>
             <!-- Eye -->
-            <circle cx="32" cy="14" r="1.5" fill="#3B2000"/>
-            <!-- Wing feathers -->
-            <path d="M42 38 Q55 28 64 32 Q55 36 50 42z" fill="url(#swanGold)" opacity="0.85"/>
-            <path d="M42 42 Q58 35 68 40 Q57 44 50 48z" fill="url(#swanGold)" opacity="0.7"/>
-            <path d="M40 46 Q55 42 64 50 Q52 52 44 52z" fill="url(#swanGold)" opacity="0.55"/>
-            <!-- Water line -->
-            <path d="M16 57 Q30 54 44 57 Q58 60 68 57" fill="none" stroke="url(#swanGold)" stroke-width="1.5" opacity="0.5"/>
+            <circle cx="38" cy="9" r="3.5" fill="#1A0800"/>
+            <circle cx="39" cy="8" r="1.2" fill="#FFFACC" opacity="0.8"/>
+            <!-- Water ripples -->
+            <path d="M22 98 Q50 93 84 98 Q104 101 120 96" fill="none" stroke="url(#swanBody)" stroke-width="2" opacity="0.45"/>
+            <path d="M28 104 Q56 100 90 104 Q108 106 118 102" fill="none" stroke="url(#swanBody)" stroke-width="1.5" opacity="0.25"/>
           </svg>
           <div class="builders-brand">
             <span class="builders-name">Guru kripa builders</span>
@@ -478,10 +521,17 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <div class="footer-logo">
-            <svg viewBox="0 0 60 48" xmlns="http://www.w3.org/2000/svg" width="40" aria-hidden="true">
-              <polygon points="30,4 52,44 8,44" fill="none" stroke="#C9A84C" stroke-width="2"/>
-              <polygon points="14,44 30,18 46,44" fill="rgba(201,168,76,0.15)" stroke="#C9A84C" stroke-width="1.5"/>
-              <circle cx="30" cy="4" r="2" fill="#C9A84C"/>
+            <svg viewBox="0 0 88 56" xmlns="http://www.w3.org/2000/svg" width="48" aria-hidden="true">
+              <defs>
+                <linearGradient id="ftGold" x1="0%" y1="100%" x2="60%" y2="0%">
+                  <stop offset="0%" style="stop-color:#8B6914"/>
+                  <stop offset="100%" style="stop-color:#F0D080"/>
+                </linearGradient>
+              </defs>
+              <polyline points="2,48 20,14 38,48" fill="none" stroke="url(#ftGold)" stroke-width="1.8" stroke-linejoin="round"/>
+              <polyline points="18,48 44,2 70,48" fill="none" stroke="url(#ftGold)" stroke-width="2.2" stroke-linejoin="round"/>
+              <polyline points="50,48 66,20 86,48" fill="none" stroke="url(#ftGold)" stroke-width="1.8" stroke-linejoin="round"/>
+              <path d="M2,48 C28,43 60,43 86,48" fill="none" stroke="url(#ftGold)" stroke-width="1" opacity="0.6"/>
             </svg>
             <span>GK Himalaya Celebration</span>
           </div>
