@@ -16,24 +16,7 @@
   <header class="navbar" id="navbar">
     <div class="nav-container">
       <a href="#home" class="nav-logo">
-        <!-- GK Himalaya Three-Peak Mountain Logo -->
-        <svg class="logo-icon" viewBox="0 0 88 56" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <defs>
-            <linearGradient id="navMtnGold" x1="0%" y1="100%" x2="60%" y2="0%">
-              <stop offset="0%" style="stop-color:#8B6914"/>
-              <stop offset="50%" style="stop-color:#C9A84C"/>
-              <stop offset="100%" style="stop-color:#F0D080"/>
-            </linearGradient>
-          </defs>
-          <!-- Left peak (medium) -->
-          <polyline points="2,48 20,14 38,48" fill="none" stroke="url(#navMtnGold)" stroke-width="2" stroke-linejoin="round"/>
-          <!-- Center peak (tallest) -->
-          <polyline points="18,48 44,2 70,48" fill="none" stroke="url(#navMtnGold)" stroke-width="2.5" stroke-linejoin="round"/>
-          <!-- Right peak (small-medium) -->
-          <polyline points="50,48 66,20 86,48" fill="none" stroke="url(#navMtnGold)" stroke-width="2" stroke-linejoin="round"/>
-          <!-- Sweeping base curves -->
-          <path d="M2,48 C28,43 60,43 86,48" fill="none" stroke="url(#navMtnGold)" stroke-width="1.2" opacity="0.65"/>
-        </svg>
+        <img class="logo-icon" src="gk-himalaya-logo.png.png" alt="GK Himalaya logo">
         <div class="logo-text">
           <span class="logo-name">GK Himalaya</span>
           <span class="logo-sub">celebration</span>
@@ -58,35 +41,8 @@
   <section class="hero" id="home">
     <div class="hero-texture"></div>
     <div class="hero-content">
-      <!-- GK Himalaya Three-Peak Mountain Hero Logo -->
       <div class="hero-icon" aria-hidden="true">
-        <svg viewBox="0 0 200 128" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <linearGradient id="goldGrad" x1="0%" y1="100%" x2="60%" y2="0%">
-              <stop offset="0%" style="stop-color:#8B6914"/>
-              <stop offset="40%" style="stop-color:#C9A84C"/>
-              <stop offset="80%" style="stop-color:#F0D080"/>
-              <stop offset="100%" style="stop-color:#FFF5C0"/>
-            </linearGradient>
-            <filter id="glow">
-              <feGaussianBlur stdDeviation="3" result="blur"/>
-              <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-            </filter>
-          </defs>
-          <!-- Left mountain (medium) -->
-          <polyline points="2,114 44,22 88,114" fill="none" stroke="url(#goldGrad)" stroke-width="3" stroke-linejoin="round" filter="url(#glow)"/>
-          <!-- Center mountain (tallest) -->
-          <polyline points="26,114 100,4 174,114" fill="none" stroke="url(#goldGrad)" stroke-width="4" stroke-linejoin="round" filter="url(#glow)"/>
-          <!-- Right mountain (small-medium) -->
-          <polyline points="112,114 154,34 198,114" fill="none" stroke="url(#goldGrad)" stroke-width="3" stroke-linejoin="round" filter="url(#glow)"/>
-          <!-- Sweeping base curves -->
-          <path d="M2,114 C60,106 140,106 198,114" fill="none" stroke="url(#goldGrad)" stroke-width="2" opacity="0.7"/>
-          <!-- Stars -->
-          <circle cx="24" cy="34" r="2" fill="#F0D080" class="star"/>
-          <circle cx="176" cy="28" r="1.5" fill="#F0D080" class="star star2"/>
-          <circle cx="8" cy="75" r="1.2" fill="#F0D080" class="star star3"/>
-          <circle cx="192" cy="68" r="1.8" fill="#F0D080" class="star star4"/>
-        </svg>
+        <img src="gk-himalaya-logo.png.png" alt="GK Himalaya logo" style="width:100%;height:auto;">
       </div>
 
       <div class="hero-divider">
@@ -448,54 +404,7 @@
     <div class="container">
       <div class="builders-inner">
         <div class="builders-logo">
-          <!-- Guru Kripa Builders — Golden Swan Logo -->
-          <svg class="swan-icon" viewBox="0 0 130 110" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <defs>
-              <linearGradient id="swanBody" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" style="stop-color:#FFFACC"/>
-                <stop offset="25%" style="stop-color:#F0D080"/>
-                <stop offset="65%" style="stop-color:#C9A84C"/>
-                <stop offset="100%" style="stop-color:#8B6914"/>
-              </linearGradient>
-              <linearGradient id="swanHead" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" style="stop-color:#FFF5B0"/>
-                <stop offset="100%" style="stop-color:#C9A84C"/>
-              </linearGradient>
-              <linearGradient id="swanWing1" x1="0%" y1="0%" x2="100%" y2="60%">
-                <stop offset="0%" style="stop-color:#FFF0A0"/>
-                <stop offset="100%" style="stop-color:#9A7520"/>
-              </linearGradient>
-              <filter id="swanShadow" x="-10%" y="-10%" width="130%" height="130%">
-                <feDropShadow dx="3" dy="5" stdDeviation="5" flood-color="#2A0800" flood-opacity="0.45"/>
-              </filter>
-              <filter id="swanGlow">
-                <feGaussianBlur stdDeviation="2" result="blur"/>
-                <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-              </filter>
-            </defs>
-            <!-- Swan body (main ellipse) -->
-            <ellipse cx="72" cy="76" rx="40" ry="22" fill="url(#swanBody)" filter="url(#swanShadow)"/>
-            <!-- Wing feathers — layered, fanning out to right (top to bottom layers) -->
-            <path d="M74 64 Q95 44 120 46 Q100 54 88 68z" fill="url(#swanWing1)" opacity="0.98"/>
-            <path d="M72 70 Q96 50 124 54 Q102 62 88 76z" fill="url(#swanWing1)" opacity="0.88"/>
-            <path d="M70 76 Q96 58 126 64 Q104 70 88 82z" fill="url(#swanWing1)" opacity="0.78"/>
-            <path d="M68 82 Q94 68 122 76 Q100 80 86 90z" fill="url(#swanWing1)" opacity="0.65"/>
-            <path d="M66 88 Q90 78 116 88 Q94 90 82 96z" fill="url(#swanWing1)" opacity="0.50"/>
-            <!-- Swan neck (S-curve elegance) -->
-            <path d="M42 76 Q32 58 28 42 Q24 26 30 16 Q34 8 40 10 Q48 12 46 26 Q42 44 40 60 Q39 68 42 76z" fill="url(#swanBody)"/>
-            <!-- Swan head -->
-            <ellipse cx="34" cy="11" rx="12" ry="9" fill="url(#swanHead)" filter="url(#swanGlow)"/>
-            <!-- Beak (pointing right) -->
-            <path d="M45 9 L64 6 L45 14z" fill="#7A5800"/>
-            <!-- Nostril line on beak -->
-            <path d="M47 9 L60 7" fill="none" stroke="#5A3800" stroke-width="0.8" opacity="0.6"/>
-            <!-- Eye -->
-            <circle cx="38" cy="9" r="3.5" fill="#1A0800"/>
-            <circle cx="39" cy="8" r="1.2" fill="#FFFACC" opacity="0.8"/>
-            <!-- Water ripples -->
-            <path d="M22 98 Q50 93 84 98 Q104 101 120 96" fill="none" stroke="url(#swanBody)" stroke-width="2" opacity="0.45"/>
-            <path d="M28 104 Q56 100 90 104 Q108 106 118 102" fill="none" stroke="url(#swanBody)" stroke-width="1.5" opacity="0.25"/>
-          </svg>
+          <img class="swan-icon" src="guru-kripa-logo.png.png" alt="Guru Kripa Builders logo">
           <div class="builders-brand">
             <span class="builders-name">Guru kripa builders</span>
           </div>
@@ -521,18 +430,7 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <div class="footer-logo">
-            <svg viewBox="0 0 88 56" xmlns="http://www.w3.org/2000/svg" width="48" aria-hidden="true">
-              <defs>
-                <linearGradient id="ftGold" x1="0%" y1="100%" x2="60%" y2="0%">
-                  <stop offset="0%" style="stop-color:#8B6914"/>
-                  <stop offset="100%" style="stop-color:#F0D080"/>
-                </linearGradient>
-              </defs>
-              <polyline points="2,48 20,14 38,48" fill="none" stroke="url(#ftGold)" stroke-width="1.8" stroke-linejoin="round"/>
-              <polyline points="18,48 44,2 70,48" fill="none" stroke="url(#ftGold)" stroke-width="2.2" stroke-linejoin="round"/>
-              <polyline points="50,48 66,20 86,48" fill="none" stroke="url(#ftGold)" stroke-width="1.8" stroke-linejoin="round"/>
-              <path d="M2,48 C28,43 60,43 86,48" fill="none" stroke="url(#ftGold)" stroke-width="1" opacity="0.6"/>
-            </svg>
+            <img src="gk-himalaya-logo.png.png" alt="GK Himalaya" width="48" style="height:auto;">
             <span>GK Himalaya Celebration</span>
           </div>
           <p>Nagpur's premier celebration hall for unforgettable events.</p>
