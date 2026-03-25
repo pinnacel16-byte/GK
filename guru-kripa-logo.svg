@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 185">
+  <defs>
+    <linearGradient id="sg" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#8B6914"/>
+      <stop offset="40%"  stop-color="#C9A84C"/>
+      <stop offset="100%" stop-color="#F0D080"/>
+    </linearGradient>
+    <linearGradient id="sg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%"   stop-color="#F0D080"/>
+      <stop offset="100%" stop-color="#C9A84C"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Wing feather layers (back to front) -->
+  <path d="M92,100 C102,76 124,52 155,34 C138,56 118,76 102,94 Z"
+    fill="#8B6914" opacity="0.7"/>
+  <path d="M93,98 C103,74 124,51 151,36 C135,57 116,76 102,93 Z"
+    fill="#A07820" opacity="0.8"/>
+  <path d="M95,97 C104,72 124,51 147,38 C132,58 115,76 103,92 Z"
+    fill="#B88A2A" opacity="0.88"/>
+  <path d="M97,96 C105,71 123,53 143,42 C129,60 114,76 103,91 Z"
+    fill="#C9A84C" opacity="0.92"/>
+  <path d="M99,95 C106,71 121,55 138,48 C126,62 113,76 104,90 Z"
+    fill="#D4B45A"/>
+  <path d="M100,94 C107,72 119,58 133,54 C122,64 112,76 104,89 Z"
+    fill="#E0C070"/>
+  <!-- Wing highlight lines -->
+  <path d="M101,92 C108,74 118,62 128,58"
+    fill="none" stroke="#F0D080" stroke-width="0.9" opacity="0.55"/>
+  <path d="M99,95 C107,74 120,58 134,51"
+    fill="none" stroke="#F0D080" stroke-width="0.9" opacity="0.4"/>
+  <path d="M97,98 C106,74 122,55 140,44"
+    fill="none" stroke="#F0D080" stroke-width="0.9" opacity="0.3"/>
+
+  <!-- Body -->
+  <ellipse cx="102" cy="116" rx="40" ry="24" fill="url(#sg)"/>
+  <ellipse cx="96"  cy="111" rx="26" ry="14" fill="#F0D080" opacity="0.22"/>
+
+  <!-- Tail feathers -->
+  <path d="M62,112 C54,120 50,130 56,136 C62,130 70,120 76,114 Z"
+    fill="#C9A84C" opacity="0.75"/>
+  <path d="M60,116 C51,125 48,134 54,139 C60,133 69,123 74,117 Z"
+    fill="#C9A84C" opacity="0.5"/>
+
+  <!-- Neck -->
+  <path d="M122,98 C132,80 140,65 146,54 C149,46 148,37 143,31"
+    fill="none" stroke="url(#sg)" stroke-width="13" stroke-linecap="round"/>
+  <path d="M122,98 C132,80 140,65 146,54 C149,46 148,37 143,31"
+    fill="none" stroke="#F0D080" stroke-width="4" stroke-linecap="round" opacity="0.25"/>
+
+  <!-- Head -->
+  <ellipse cx="142" cy="27" rx="12" ry="9" fill="#D4A832" transform="rotate(-15,142,27)"/>
+  <ellipse cx="140" cy="24" rx="7"  ry="5" fill="#F0D080" opacity="0.35" transform="rotate(-15,140,24)"/>
+
+  <!-- Beak -->
+  <path d="M153,26 L166,29 L153,33 Z" fill="#C9A84C"/>
+  <path d="M153,26 L166,29 L153,29 Z" fill="#E8C860" opacity="0.6"/>
+
+  <!-- Eye -->
+  <circle cx="147" cy="24" r="2.2" fill="#1a0000"/>
+  <circle cx="146.4" cy="23.4" r="0.8" fill="#fff" opacity="0.5"/>
+
+  <!-- Lines above and below text -->
+  <line x1="16"  y1="152" x2="224" y2="152" stroke="url(#sg)" stroke-width="0.9" opacity="0.75"/>
+
+  <!-- Guru kripa builders -->
+  <text x="120" y="168"
+    font-family="'Playfair Display', Georgia, serif"
+    font-size="19" fill="url(#sg)"
+    text-anchor="middle" letter-spacing="0.4">Guru kripa builders</text>
+
+  <line x1="16"  y1="176" x2="224" y2="176" stroke="url(#sg)" stroke-width="0.9" opacity="0.75"/>
+</svg>
