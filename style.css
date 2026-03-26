@@ -934,10 +934,9 @@ ul { list-style: none; }
   flex-shrink: 0;
 }
 .swan-icon {
-  height: 150px;
+  height: 180px;
   width: auto;
-  mix-blend-mode: screen;
-  filter: drop-shadow(0 6px 20px rgba(201,168,76,0.4));
+  border-radius: 8px;
 }
 .builders-brand {
   text-align: center;
